@@ -32,8 +32,8 @@ function onsubmitform(e){
 	var loginStatus = localStorage.getItem('userLoggedIn');
 	
 	if (loginStatus === "true"){
-		document.entireHomeForm.action ="/search";
-		document.privateRoomForm.action ="/search";
+		document.entireHomeForm.action ="/list-your-space-2";
+		document.privateRoomForm.action ="/list-your-space-2";
 	} else {
 		var listingProcess = true;
 		localStorage.setItem('listingProcess', listingProcess)
