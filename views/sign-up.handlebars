@@ -1,8 +1,18 @@
 <!doctype html><html><head>{{> globalHead}}</head>
 <body>
 	{{> globalNavigation}}
+	<script type="text/javascript">
+		{{#each variables}}
+		console.log("{{city}}");
+		localStorage.setItem('city', "{{city}}"); 
+		localStorage.setItem('numOfBaths', "{{numOfBaths}}");
+		localStorage.setItem('numOfBeds', "{{numOfBeds}}");
+		localStorage.setItem('numOfOccupants', "{{numOfOccupants}}");
+		{{/each}}
+	</script>
+
 	<div class="wrap">
-    <h3 class="text-center">{{#each variables}}Before listing your space, let's sign you up for an account really quick. {{city}} {{numOfBeds}} {{numOfBaths}} {{numOfOccupants}} {{/each}}</h3>
+    <h3 class="text-center">Before listing your space, let's sign you up for an account really quick.</h3>
     <div id="sign-up-panel">
       <!--form id="entireHome" role="form" method="get" action="JavaScript:handleClick()"-->
       <form id="signUpForm" name="signUpForm" role="form" method="get" onsubmit="return onsubmitform();">
