@@ -30,7 +30,7 @@ function onsubmitform(e){
 	var listingProcess = localStorage.getItem('listingProcess');
 	console.log("the process is " + listingProcess);
 	if (listingProcess === "true"){
-		document.signUpForm.action ="/search";
+		document.signUpForm.action ="/list-your-space-2";
 	} else {
 		document.signUpForm.action ="/";
 
