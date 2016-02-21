@@ -11,9 +11,10 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected! - landing.js");
 
+	var userLoggedIn = localStorage.getItem('userLoggedIn');
 	if(typeof userLoggedIn === 'undefined'){
 		console.log("userLoggedIn is not defined yet")
-    	var userLoggedIn = false;
+    	userLoggedIn = false;
     	localStorage.setItem('userLoggedIn', false);
     };
 }
