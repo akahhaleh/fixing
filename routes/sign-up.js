@@ -6,5 +6,5 @@ exports.view = function(req, res){
 	var numOfOccupants  = (typeof req.query.occupants !=='undefined')?req.query.occupants:0;
 	console.log("We logged: city= "+city+" #beds= "+numOfBeds+" #baths= "+numOfBaths+" #occupants= "+numOfOccupants);
 
-	res.render('sign-up');
+	res.render('sign-up', {city, numOfBeds, numOfBaths, numOfOccupants});
 };
