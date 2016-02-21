@@ -1,0 +1,26 @@
+<!doctype html><html>
+<head>{{> globalHead}}</head>
+
+<body>
+  {{> globalNavigation}}
+	<div class="wrap">
+    <a href="search" class="btn btn-default">Edit Search</a>
+    <div class="all-listings">
+  		{{#each housing}}
+  		<div class="house">
+  			<h3>{{title}}</h3>
+  			<a class="house-card" href="/listing">
+  				<img class = "img-responsive" src = "{{image1}}">
+  			</a>
+        <p class="cost">Cost: {{cost}}</p>
+        <div class="bed-bath">
+          <p class="bed">Bed: {{bed}}</p>
+    			<p class="bath">Bath: {{bath}}</p>
+        </div>
+  		</div>
+  		{{/each}}	
+  	</div>
+  </div>
+
+  {{> globalBottomScripts}}
+</body></html>

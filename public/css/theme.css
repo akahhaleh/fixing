@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Play);
+
+/************************************
+*************************************
+NOTE: USE THIS CSS FILE ONLY FOR
+THEMES, BACKGROUNDS, AND TYPOGRAPHY
+EXCEPT FOR ALIGNMENTS
+*************************************
+************************************/
+
+/*
+color1: #A9C4BD
+color2: #E4DDCB
+color3: #EC7B59
+// primary: color4: #CE4648
+color5: #524556
+ */
+
+/* basic elements theme */
+
+* {
+	color: #fff;
+	font-family: "Play", "Arial", sans-serif;
+	font-weight: normal;
+	border: none;
+}
+
+body {
+	background: url('../img/patterns/lodyas.png');
+	background-repeat: repeat;	
+}
+
+a {
+	color: #524556;
+}
+
+/* headlines theme */
+h3 {
+	font-family: "Play", "Arial", sans-serif;
+}
+
+/* buttons theme */
+.btn, .btn-default {
+	border-radius: 0;
+	font-size: 1.3em;
+}
+
+/* form edits */
+label {
+	font-weight: normal;
+}
+
+/* landing page theme */
+.landing-feature h2 {
+	background: rgba(0,0,0,.75);
+	font-family: "Play", "Arial", sans-serif;
+}
+
+/* global navigation menu theme */
+.navbar {
+	background: #CE4648;
+}
+
+.navbar .button {
+	background: none;
+}
+
+.navbar .icon-bar {
+	background: #fff;	
+}
+
+.navbar-nav li:last-of-type a {
+	border-bottom: none;
+}
+
+.navbar-toggle {
+	border: none;
+}
+
+.navbar-nav a {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1.25em;
+}
+
+/* special body backgrounds */
+#landing {
+	background: url('../img/pro/landing.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
