@@ -35,7 +35,7 @@ function onsubmitform(e){
 		document.entireHomeForm.action ="/list-your-space-2";
 		document.privateRoomForm.action ="/list-your-space-2";
 	} else {
-		var listingProcess = true;
+		var listingProcess = "true";
 		localStorage.setItem('listingProcess', listingProcess)
 		document.entireHomeForm.action ="/sign-up";
 		document.privateRoomForm.action ="/sign-up";

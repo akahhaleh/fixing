@@ -10,8 +10,6 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected! - add-listing.js");
-	//$("#entireHomeBtn").unbind().click(entireHomeClicked);
-	//$("#privateRoomBtn").unbind().click(privateRoomClicked);
 
 	// get local storage variables about user
 	var userFirstName = localStorage.getItem('user-firstName');

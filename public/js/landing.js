@@ -12,9 +12,9 @@ function initializePage() {
 	console.log("Javascript connected! - landing.js");
 
 	var userLoggedIn = localStorage.getItem('userLoggedIn');
-	if(typeof userLoggedIn === 'undefined'){
+	if(userLoggedIn !== "false" && userLoggedIn !== "true"){
 		console.log("userLoggedIn is not defined yet")
-    	userLoggedIn = false;
-    	localStorage.setItem('userLoggedIn', false);
+    	userLoggedIn = "false";
+    	localStorage.setItem('userLoggedIn', userLoggedIn);
     };
 }
