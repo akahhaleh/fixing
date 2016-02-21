@@ -27,3 +27,18 @@ function privateRoomClicked(e){
 	localStorage.setItem('type', housingType);
 	$("#privateRoomPanel").slideToggle("slowly");
 }
+
+function onsubmitform(e){
+	var loginStatus = localStorage.getItem('userLoggedIn');
+	
+	if (loginStatus === "true"){
+		document.entireHomeForm.action ="/search";
+		document.privateRoomForm.action ="/search";
+	} else {
+		var listingProcess = true;
+		localStorage.setItem('listingProcess', listingProcess)
+		document.entireHomeForm.action ="/sign-up";
+		document.privateRoomForm.action ="/sign-up";
+
+	}	
+}
