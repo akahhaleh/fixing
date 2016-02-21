@@ -32,7 +32,7 @@ function onsubmitform(e){
 	if (listingProcess === "true"){
 		document.signUpForm.action ="/search";
 	} else {
-		document.signUpForm.action ="/";
+		document.signUpForm.action ="/search";
 
 	}	
 }
