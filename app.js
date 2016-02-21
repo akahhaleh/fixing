@@ -18,7 +18,6 @@ var help = require('./routes/help');
 var search = require('./routes/search');
 var allListings = require('./routes/all-listings');
 var listing = require('./routes/listing');
-var entireHome = require('./routes/entire-home');
 // locales
 var listYourSpace = require('./routes/list-your-space');
 // refugees
@@ -56,7 +55,6 @@ app.get('/help', help.view);
 app.get('/search', search.view);
 app.get('/all-listings', allListings.view);
 app.get('/listing', listing.view);
-app.get('/entire-home', entireHome.view);
 // locales pages
 app.get('/list-your-space', listYourSpace.view);
 // refugees pages
