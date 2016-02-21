@@ -1,11 +1,8 @@
-var housingData = require('../housing.json');
-var localesData = require('../locales.json');
-var refugeesData = require('../refugees.json');
+//var housingData = require('../housing.json');
+
 
 exports.view = function(req, res){
-	console.log(housingData);
-	console.log(localesData);
-	console.log(refugeesData);
+	//console.log(housingData);
 
 	res.render('apply');
 };
