@@ -37,8 +37,8 @@ function onsubmitform(e){
 	} else {
 		var listingProcess = true;
 		localStorage.setItem('listingProcess', listingProcess)
-		document.entireHomeForm.action ="/";
-		document.privateRoomForm.action ="/";
+		document.entireHomeForm.action ="/sign-up";
+		document.privateRoomForm.action ="/sign-up";
 
 	}	
 }
